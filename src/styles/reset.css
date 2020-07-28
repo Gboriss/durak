@@ -1,0 +1,39 @@
+
+body {
+	font-family: 'UbuntuMono';
+	margin: 0;
+	background: #123312;
+
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input, button {
+	margin: 4px;
+	padding: 0;
+	font: inherit;
+	line-height: normal;
+	color: inherit;
+	/* background-color: transparent; */
+	/* border: none; */
+	outline: none;
+}
+
+input {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1 {
+	margin: 0;
+}
