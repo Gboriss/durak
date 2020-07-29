@@ -1,39 +1,15 @@
 <template>
 <div class="app">
-	<div class="carts">
-		<div class="compCarts">
-			<p>карты компьютера</p>
-			<ActCards />
-		</div>
-
-		<Bit />
-
-		<div class="myCarts">
-			<p>Ваши карты</p>
-			<PlCards />
-		</div>
-	</div>
-	<div class="deck">
-		<p>24</p>
-		<img class="deckImg" src="./assets/images/13_2.jpg" alt="">	
-	</div>
+	<router-view/>
 </div>
 </template>
 
 <script>
-import PlCards from '@/components/PlCards.vue'
-import ActCards from '@/components/ActCards.vue'
-import Bit from '@/components/Bit.vue'
+
 
 
 export default {
 	name: 'App',
-  	components: {
-	PlCards,
-	ActCards,
-	Bit
-  }
-
 }
 </script>
 
@@ -41,30 +17,26 @@ export default {
 @import './styles/reset.css';
 @import './styles/fonts.css';
 
-.app {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background: #233f23;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
-	// width: 1280px;
-	max-width: 1280px;
-	
-	margin: 20px auto;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #b9514e;
 }
-
-.carts {
-	width: 550px;
-	max-width: 550px;
-	padding: 20px;
-
+.container {
+  max-width: 53.75rem;
+  text-align: center;
 }
-
-.deckImg {
-	padding: 0 20px;
-
+.title {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-shadow: .3125rem .3125rem #a03839;
 }
-
-
-
 </style>
